@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mega Formulaire</title>
+</head>
+<body>
+	
+	<form action="" name="formulaire1" value=" ">
+	
+		Votre poids <input type="text" name="poids" >Kg
+		
+		<input type="button" name="envoyer" onclick="veriFormulaire();s">
+	</form>
+	
+	<script>
+	 function veriFormulaire(){
+			if((formulaire1.poids.value)==""){
+				alert("Saisissez votre poids");
+			}else if (isNaN(formulaire1.poids.value) ==false){
+				formulaire1.submit();
+			}else if (isNaN(formulaire1.poids.value)==true){
+				alert("poids incoherent");
+			}
+		}
+	
+	</script>
+</body>
+</html>
